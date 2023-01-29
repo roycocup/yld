@@ -16,7 +16,6 @@ start_dict = {
 end = { "a.b.c": 1, "d": 2 }
 
 def find(obj, keys_found = []):
-    breakpoint()
     for k,v in obj.items():
         if type(v) is dict:
             keys_found.append(k)
